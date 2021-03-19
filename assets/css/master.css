@@ -1,50 +1,111 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/*Import der Webfont, wie man den Link reinhaut muss ich noch nachsehen*/
+@font-face {
+font-family: OpenSans;
+font-display: swap;
+src:
+  url('https://fonts.googleapis.com/css?family=Open+Sans:400,300'),
+  local('Roboto')
 }
 
-/* Start of my
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+/*Override everything*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #hsla(360, 100%, 100%, 0.5);
+
+}
+
+
+
+li, a , button, h1, h2, p, nav, a, small, address {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111111;
+  text-decoration: none;
+
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+  padding: 30px 10%;
+}
+
+
+.logo {
+  
+  height: 50px;
+
+}
+
+.logo-container, .header-title-container, #nav-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title:hover {
+  color: #a1a6a9;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li :hover {
+  color: #a1a6a9;
+}
+
+
+#sticky-social-icons-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  width: max-content;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  list-style-type: none;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#sticky-social-icons-list li{
+  padding: 10px;
+}
+
+#sticky-youtube:hover {
+  color: #b31217;
+}
+#sticky-instagram-icon:hover {
+  color: #e1306c;
+}
+#sticky-mail:hover {
+  color: #b31217;
+}
+#sticky-facebook:hover {
+  color: #3b5998;
+}
+
+.home-images {
+  max-width:100%;
+  height:auto;
+}
+
+
+div {
+  border: solid #CC00AA;
+  border-width: 1px 1px 1px;
+}
