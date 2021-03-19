@@ -54,6 +54,10 @@ li, a , button, h1, h2, p, nav, a, small, address {
   color: #a1a6a9;
 }
 
+@media screen and (max-width: 768px) {
+  #nav-links-container {display: none;}
+}
+
 #nav-links-container ul {
   max-width: 100%;
 }
