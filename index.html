@@ -1,90 +1,123 @@
-<!DOCTYPE html>
-<html lang="de" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rancho Los sue&ntilde;os</title>
-    <link rel="stylesheet" href="assets/css/master.css">
-    <link rel="icon" type="image/ico" href="assets/icons/arch-icon.ico">
-    <script src="https://kit.fontawesome.com/ae3f847c48.js" crossorigin="anonymous"></script>
-  </head>
-  <body id="top">
-    <header>
-      <div class="logo-container">
-          <img class="logo" id="logo" src="assets\logos\logo-olive-schwarz-weiß.png" alt="logo">
-      </div>
 
-      <div class="header-title-container">
-        <h1><a href="index.html" id="title"> Rancho Los sue&ntilde;os</a></h1>
-      </div>
-      <div class="nav-links-container" id="nav-links-container">
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="eventlocation.html">Event-Location</a></li>
-            <li><a href="ferienhaeuser.html">Ferienhäuser</a></li>
-          </ul>
-        </nav>
-      </div>
-      <ul id="sticky-social-icons-list">
-        <li><a href="https://www.instagram.com/" id="sticky-instagram" aria-label="Instagram"> <i class="fab fa-instagram fa-2x" id="sticky-instagram-icon"></i></a></li>
-        <li><a href="https://www.facebook.com/" id="sticky-facebook" aria-label="Facebook"> <i class="fab fa-facebook fa-2x"></i></a></li>
-        <li><a href="https://www.youtube.com/" id="sticky-youtube" aria-label="YoutTube"> <i class="fab fa-youtube fa-2x"></i></a></li>
-        <li><a href="mailto:flickismansion@google.de?subject=Kontaktaufnahme%20bzgl.%20Flickis%20Mansion&body=Lieber%20Flicki,%0Aich%20interessiere%20mich%20fuer%20deine%20mansion" id="sticky-mail" aria-label="Facebook" > <i class="fas fa-envelope fa-2x" ></i></a></li>
-      </ul>
-    </header>
-    <main>
-      <div class="Eventlocation">
-        <section>
-          <a href="eventlocation.html"></a>
-          <h2>Unsere Event-Location</h2>
-          <p>Einzigartig, einladend, einfach schön! Erleben Sie unvergessliche Momente unter der Sonne Spaniens.</p>
-          <figure>
-            <img src="https://debodaconangela.com/wp-content/uploads/2016/04/bodas-sierra-andalucia.jpg" class="home-images" alt="EventLocation">
-          </figure>
-          <a href="eventlocation.html">Besichtigen Sie unsere Event-Location online</a>
-        </section>
-      </div>
-      <section>
-        <a href="ferienhaeuser.html"></a>
-        <br>
-        <h2>Unsere Ferienhäuser</h2>
-        <p>Finden Sie Ihr Freiheitsgefühl und Ruhe in unseren einladenden Unterkünften.</p>
-        <figure>
-          <img src="https://snappygoat.com/b/dbbf3fdcaad5c2d54adee539b51b7537fcca5a92" class="home-images" alt="Ferienhaus">
-        </figure>
-        <a href="ferienhaeuser.html">Entdecken Sie unsere Ferienhäuser online</a>
-      </section>
+/*Import der Webfont, wie man den Link reinhaut muss ich noch nachsehen*/
+@font-face {
+font-family: OpenSans;
+font-display: swap;
+src:
+  url('https://fonts.googleapis.com/css?family=Open+Sans:400,300'),
+  local('Roboto')
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+/*Override everything*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #hsla(360, 100%, 100%, 0.5);
+
+}
 
 
 
+li, a , button, h1, h2, p, nav, a, small, address {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111111;
+  text-decoration: none;
 
-    </main>
-    <footer>
-      <hr>
-      <br>
-      <a href="mailto:flickismansion@google.de?subject=Kontaktaufnahme%20bzgl.%20Flickis%20Mansion&body=Lieber%20Flicki,%0Aich%20interessiere%20mich%20fuer%20deine%20mansion.">Kontaktieren Sie uns per Mail</a>
-      <br><br>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="eventlocation.html">Event-Location</a>
-        <a href="ferienhaeuser.html">Ferienhäuser</a>
-      </nav>
-      <br>
-      <br>
-      <div class="social-icons-header">
-      <a href="https://www.youtube.com/" aria-label="YoutTube"> <i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com/" aria-label="Instagram"> <i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.de/" aria-label="Facebook"> <i class="fab fa-facebook"></i></a>
-      <a href="mailto:flickismansion@google.de?subject=Kontaktaufnahme%20bzgl.%20Flickis%20Mansion&body=Lieber%20Flicki,%0Aich%20interessiere%20mich%20fuer%20deine%20mansion" aria-label="Facebook" > <i class="fas fa-envelope" ></i></a>
-      </div>
-      <br>
-      <a href="#top">Back to top</a>
-      <br><br>
-      <address class="Kontaktdaten">
-        Sie finden uns hier:<br>
-        Pista 42 <br> Huelva, ES
-      </address><br>
-      <small>&copy;Rancho Los sue&ntilde;os <br> Written by <a href="mailto:stefanie.speri@live,com">Stefanie Speri</a></small>
-    </footer>
-  </body>
-</html>
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+  padding: 30px 10%;
+}
+
+
+.logo {
+
+  height: 50px;
+
+}
+
+.logo-container, .header-title-container, #nav-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title:hover {
+  color: #a1a6a9;
+}
+
+@media screen and (max-width: 768px) {
+  #nav-links-container {display: none;}
+}
+
+#nav-links-container ul {
+  max-width: 100%;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li :hover {
+  color: #a1a6a9;
+}
+
+
+#sticky-social-icons-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  width: max-content;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 0.5);
+  list-style-type: none;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#sticky-social-icons-list li{
+  padding: 10px;
+}
+
+#sticky-youtube:hover {
+  color: #b31217;
+}
+#sticky-instagram-icon:hover {
+  color: #e1306c;
+}
+#sticky-mail:hover {
+  color: #ffcc00;
+}
+#sticky-facebook:hover {
+  color: #3b5998;
+}
+#sticky-phone-icon:hover {
+  color: #009900;
+}
+
+
+.home-images {
+  max-width:100%;
+  height:auto;
+}
+
+
+div {
+  border: solid #CC00AA;
+  border-width: 1px 1px 1px;
+}
