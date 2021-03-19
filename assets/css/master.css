@@ -39,7 +39,7 @@ li, a , button, h1, h2, p, nav, a, small, address {
 
 
 .logo {
-  
+
   height: 50px;
 
 }
@@ -52,6 +52,10 @@ li, a , button, h1, h2, p, nav, a, small, address {
 
 #title:hover {
   color: #a1a6a9;
+}
+
+#nav-links-container ul {
+  max-width: 100%;
 }
 
 .nav-links li {
