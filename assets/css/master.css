@@ -175,7 +175,6 @@ div {
 }
 */
 @media screen and (max-width: 768px) {
-  #nav-links-container {display: none;}
   #logo {height: 4rem; margin-top: 15%}
-  
+  .glass {display: none;}
 }
