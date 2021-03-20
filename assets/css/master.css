@@ -144,4 +144,5 @@ div {
 @media screen and (max-width: 768px) {
   /* #nav-links-container {display: none;} */
   #logo {height: 4rem; margin-top: 10%}
+  div {background-color: #009900}
 }
