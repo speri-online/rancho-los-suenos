@@ -1,4 +1,37 @@
 
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@RanchoLosSuenos
+RanchoLosSuenos /
+home
+
+1
+0
+
+    0
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+home/assets/css/master.css
+@RanchoLosSuenos
+RanchoLosSuenos Update master.css
+Latest commit 09cf818 1 hour ago
+History
+1 contributor
+180 lines (150 sloc) 3.26 KB
+
 /*Import der Webfont, wie man den Link reinhaut muss ich noch nachsehen*/
 @font-face {
 font-family: OpenSans;
@@ -20,7 +53,7 @@ src:
 }
 
 body {
-  background: url("https://negativespace.co/wp-content/uploads/2020/07/negative-space-colorful-bokeh-abstract-17-1062x708.jpg");
+  background: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&fit=max&w=930");
   background-attachment: fixed;
   background-size: cover;
   display: grid;
@@ -178,3 +211,5 @@ div {
   #logo {height: 4rem; margin-top: 15%}
   .glass {display: none;}
 }
+
+ 
