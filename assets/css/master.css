@@ -143,5 +143,5 @@ div {
 */
 @media screen and (max-width: 768px) {
   /* #nav-links-container {display: none;} */
-  #logo {height: 3rem;}
+  #logo {height: 4rem; margin-top: 10%}
 }
