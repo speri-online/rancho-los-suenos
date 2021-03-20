@@ -15,11 +15,44 @@ src:
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #hsla(360, 100%, 100%, 0.5);
+  background-color: white;
 
 }
 
+body {
+  background: url("https://negativespace.co/wp-content/uploads/2020/07/negative-space-colorful-bokeh-abstract-17-1062x708.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  height: 100vh;
 
+}
+
+.glass {
+  width: 30rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background: inherit;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: -2;
+}
+
+.glass:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  z-index: -3;
+
+}
 
 li, a , button, h1, h2, p, nav, a, small, address {
   font-family: "Montserrat", sans-serif;
