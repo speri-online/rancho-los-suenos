@@ -30,8 +30,8 @@ body {
 }
 
 .glass {
-  width: 30rem;
-  height: 20rem;
+  width: 100%;
+  height: 130px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background: inherit;
   overflow: hidden;
@@ -73,6 +73,11 @@ li, a , button, h1, h2, p, nav, a, small, address {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.logo-container {
+  border-radius: 14px 14px 0px 0px;
 }
 
 .header-title-container {
@@ -175,8 +180,7 @@ div {
 }
 */
 @media screen and (max-width: 768px) {
+
   #logo {height: 4rem; margin-top: 15%}
   .glass {display: none;}
 }
-
- 
