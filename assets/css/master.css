@@ -142,6 +142,6 @@ div {
 }
 */
 @media screen and (max-width: 768px) {
-  #nav-links-container {display: none;}
-  #logo {height: 5rem;}
+  /* #nav-links-container {display: none;} */
+  #logo {height: 3rem;}
 }
