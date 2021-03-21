@@ -16,6 +16,7 @@ body {
   display: grid;
   align-items: center;
   height: 100vh;
+  margin: 0px;
 
 }
 
@@ -133,19 +134,22 @@ li, a , button, h1, h2, p, nav, a, small, address {
 }
 
 
+#sticky-social-icons-list-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 #sticky-social-icons-list{
   display: flex;
   position: fixed;
   bottom: 0px;
-  right: 10%;
-  width: max-content;
-  height: max-content;
   background-color: rgba(255, 255, 255, 0.5);
   list-style-type: none;
   border-radius: 7px 7px 0px 0px;
   margin: 0px;
   padding: 0px;
+  justify-content: center;
 }
 
 #sticky-social-icons-list li{
@@ -172,6 +176,15 @@ li, a , button, h1, h2, p, nav, a, small, address {
 .home-images {
   max-width:100%;
   height:auto;
+}
+
+.footer {
+  background-color: #fff;
+}
+
+#spacer-footer {
+  height: 5rem;
+
 }
 
 /*
