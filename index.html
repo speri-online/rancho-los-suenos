@@ -6,6 +6,26 @@
     <link rel="stylesheet" href="assets/css/master.css">
     <link rel="icon" type="image/ico" href="assets/icons/arch-icon.ico">
     <script src="https://kit.fontawesome.com/ae3f847c48.js" crossorigin="anonymous"></script>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 37.26294439635781, lng: -6.944840191287741 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 7,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+
   </head>
   <body id="top">
     <div class="glass" id="glass">
@@ -58,7 +78,7 @@
           <img src="https://snappygoat.com/b/dbbf3fdcaad5c2d54adee539b51b7537fcca5a92" class="home-images" alt="Ferienhaus">
         </figure>
         <a href="ferienhaeuser.html">Entdecken Sie unsere Ferienhäuser online</a>
-        <br><br>
+
       </section>
 
 
@@ -66,25 +86,37 @@
 
     </main>
     <footer class="footer">
-      <hr>
-      <br>
-      <a href="mailto:flickismansion@google.de?subject=Kontaktaufnahme%20bzgl.%20Flickis%20Mansion&body=Lieber%20Flicki,%0Aich%20interessiere%20mich%20fuer%20deine%20mansion.">Kontaktieren Sie uns per Mail</a>
-      <br><br>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="eventlocation.html">Event-Location</a>
-        <a href="ferienhaeuser.html">Ferienhäuser</a>
-      </nav>
-      <br>
-      <br>
-      <br>
-      <a href="#top">Back to top</a>
-      <br><br>
-      <address class="Kontaktdaten">
+      <div class="footer-content-top" id="footer-content-top">
+        <a href="mailto:flickismansion@google.de?subject=Kontaktaufnahme%20bzgl.%20Flickis%20Mansion&body=Lieber%20Flicki,%0Aich%20interessiere%20mich%20fuer%20deine%20mansion.">Kontaktieren Sie uns per Mail</a>
+
+        <nav class="footer-content" id="nav-footer">
+          <a href="eventlocation.html" class="nav-footer-items">Event-Location</a>
+          <a href="index.html" class="nav-footer-items" >Home</a>
+          <a href="ferienhaeuser.html" class="nav-footer-items">Ferienhäuser</a>
+        </nav>
+
+        <a href="#top" class="footer-content">Back to top</a>
+      </div>
+
+
+      <div id="map"></div>
+
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script id="google-map"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiFf8uyA4HZ22zxD-ZT_o_fg_e-_0fVpQ&callback=initMap&libraries=&v=weekly"
+        async>
+      </script>
+
+
+      <address class="footer-content">
         Sie finden uns hier:<br>
         Pista 42 <br> Huelva, ES
-      </address><br>
-      <small>&copy;Rancho Los Sue&ntilde;os <br> Written by <a href="mailto:stefanie.speri@live,com">Stefanie Speri</a></small>
+      </address>
+
+
+      <small class="footer-content">&copy;Rancho Los Sue&ntilde;os <br> Written by <a href="mailto:stefanie.speri@live,com">Stefanie Speri</a></small>
+
+
       <div class="spacer-footer" id="spacer-footer">
 
       </div>
