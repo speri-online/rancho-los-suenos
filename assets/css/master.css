@@ -14,10 +14,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   display: grid;
-  align-items: center;
   height: 100vh;
   margin: 0px;
-
+  grid-template-columns: 98.8vw;
 }
 
 .glass {
@@ -91,6 +90,7 @@ li, a , button, h1, h2, p, nav, a, small, address {
   margin: 0px auto auto auto;
   padding: 0rem 2rem 0rem 2rem;
   background-color: #fdfdfd;
+  z-index: 100;
 
 }
 
@@ -180,11 +180,44 @@ li, a , button, h1, h2, p, nav, a, small, address {
 
 .footer {
   background-color: #fff;
+  padding: 3rem;
+}
+
+
+.footer-content, .footer-content-top {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.footer-content-top {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+#nav-footer {
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-items: center;
+}
+
+
+.nav-footer-items {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 20rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #spacer-footer {
   height: 5rem;
-
 }
 
 /*
