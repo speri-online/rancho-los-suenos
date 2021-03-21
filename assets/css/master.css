@@ -130,8 +130,7 @@ li, a , button, h1, h2, p, nav, a, small, address {
   box-shadow: 0px 0px 15px 0px #c1bbec;
   -moz-box-shadow: 0px 0px 15px 0px #c1bbec;
   -webkit-box-shadow: 0px 0px 15px 0px #c1bbec;
-  position: relative;
-  z-index: -2;
+  margin: 1rem;
 }
 
 
