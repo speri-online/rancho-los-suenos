@@ -11,13 +11,7 @@ src:
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
 /*Override everything*/
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: white;
 
-}
 
 body {
   background: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&fit=max&w=930");
@@ -90,16 +84,18 @@ li, a , button, h1, h2, p, nav, a, small, address {
 }
 
 #nav-links-container {
-  padding: 10px;
   border-radius: 0px 0px 14px 14px;
-  border-width: 43px;
-  box-shadow: 0px 0px 15px 0px #7d5f5f;
-  -moz-box-shadow: 0px 0px 15px 0px #7d5f5f;
-  -webkit-box-shadow: 0px 0px 15px 0px #7d5f5f;
+  box-shadow: 0px 0px 15px 0px #c1bbec;
+  -moz-box-shadow: 0px 0px 15px 0px #c1bbec;
+  -webkit-box-shadow: 0px 0px 15px 0px #c1bbec;
   position: fixed;
-  width: 100%;
   top: 0px;
-  color: white;
+  left: 1rem;
+  right: 1rem;
+  margin: 0px auto auto auto;
+  padding: 0rem 2rem 0rem 2rem;
+  background-color: #fdfdfd;
+
 }
 
 #title:hover {
@@ -107,8 +103,7 @@ li, a , button, h1, h2, p, nav, a, small, address {
 }
 
 
-#nav-links-container, ul {
-  max-width: 100%;
+#nav-links-container ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -132,6 +127,18 @@ li, a , button, h1, h2, p, nav, a, small, address {
   color: #a1a6a9;
 }
 
+.assets-container {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  box-shadow: 0px 0px 15px 0px #c1bbec;
+  -moz-box-shadow: 0px 0px 15px 0px #c1bbec;
+  -webkit-box-shadow: 0px 0px 15px 0px #c1bbec;
+  position: relative;
+  z-index: -4;
+}
+
+
 
 #sticky-social-icons-list{
   display: flex;
@@ -145,6 +152,7 @@ li, a , button, h1, h2, p, nav, a, small, address {
   background-color: rgba(255, 255, 255, 0.5);
   list-style-type: none;
   border-radius: 7px 7px 0px 0px;
+  margin: 0px;
 }
 
 #sticky-social-icons-list li{
