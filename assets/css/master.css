@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 /*Import der Webfont, wie man den Link reinhaut muss ich noch nachsehen*/
 @font-face {
 font-family: OpenSans;
@@ -7,10 +7,6 @@ src:
   url('https://fonts.googleapis.com/css?family=Open+Sans:400,300'),
   local('Roboto')
 }
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
-
-/*Override everything*/
 
 
 body {
